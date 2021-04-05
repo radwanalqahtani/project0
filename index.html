@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <title>Google</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* this is the container for the tob bar and we use
          the flex as in google to put everthing in side it to
          be in the center*/
-          #top_bar_container{
-            display: flex; padding: 10px;
+        #body-standr {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #top_bar_container {
+            display: flex;
+            padding: 6px;
             justify-content: flex-end;
         }
-        .links{
+
+        .links {
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
-            font-size:13px;
+            font-size: 13px;
             padding: 6px;
             color: black;
             width: 50px;
         }
-        .links:hover{
+
+        .links:hover {
             text-decoration: underline;
         }
-        .logo-image-container{
-            min-height:300px;
-            max-height:320px;
-            height:calc(100% - 560px);
+
+        .logo-image-container {
+            min-height: 300px;
+            max-height: 320px;
+            height: calc(100% - 560px);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .logo-image{
-            max-height:92px;
+
+        .logo-image {
+            max-height: 92px;
             height: 100%;
             margin-top: auto;
         }
-        .image-style{
-            max-height:100%;
-            max-width:100%;
-            object-fit:contain;
-            object-position:center bottom;
-            width:auto;
+
+        .image-style {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
         }
     </style>
-    </head>
-    <body> 
+</head>
+
+<body>
+    <div id=body-stander>
         <!--this is the top bar container flex-->
         <div id="top_bar_container">
             <div>
@@ -56,19 +71,22 @@
         </div>
         <!--top bar container flex end-->
         <!--logo image container-->
-    <div class="logo-image-container">
-        <!--logo image-->
-        <div class="logo-image">
-            <img class="image-style" alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <div class="logo-image-container">
+            <!--logo image-->
+            <div class="logo-image">
+                <img class="image-style" alt="Google" height="92"
+                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            </div>
+            <!--logo image end-->
         </div>
-        <!--logo image end-->
+        <!--logo image container end-->
+        <div>
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
     </div>
-    <!--logo image container end-->
-    <div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    </div>
-    </body>
+</body>
+
 </html>
