@@ -8,12 +8,13 @@
         /* this is the container for the tob bar and we use
          the flex as in google to put everthing in side it to
          be in the center*/
-         body{
-             background-color: #fff;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size: 14px;
-             color: #222;
-         }
+        body {
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #222;
+        }
+
         #page-standr {
             display: flex;
             flex-direction: column;
@@ -61,6 +62,47 @@
             object-position: center bottom;
             width: auto;
         }
+
+        #search-form-container {
+            padding: 20px;
+            max-height: 160px;
+
+        }
+
+        .search-form {
+            position: relative;
+            margin: 0 auto;
+            width: auto;
+            max-width: 584px;
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+        }
+
+        .search-form:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-color: rgba(223, 225, 229, 0)
+        }
+
+        /*#search-form:focus{background-color:#fff;box-shadow:0 1px 6px rgba(32,33,36,.28);border-color:rgba(223,225,229,0)}*/
+        .search-form:focus:.input-foucs:focus {
+            background-color: #fff;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+            border-color: rgba(223, 225, 229, 0)
+        }
+
+        .search-icon{
+            display: inline-block;
+            color: #222;
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+        }
     </style>
 </head>
 
@@ -87,13 +129,22 @@
         </div>
         <!--logo image container end-->
         <!--search form start-->
-        <div id=search-form>
-            <div>
-                <form action="https://google.com/search">
-                    <input type="text" name="q">
-                    <input type="submit" value="Google Search">
-                </form>
-            </div>
+        <div id=search-form-container>
+            <form action="https://google.com/search">
+                <div class=search-form>
+                    <div>
+                        <span class="search-icon">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <!--<div>
+                    <input class="input-focus" type="text" name="q">
+                    </div>-->
+                    <!--  <input type="submit" value="Google Search">-->
+                </div>
+            </form>
         </div>
     </div>
 </body>
