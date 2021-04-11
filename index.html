@@ -93,11 +93,16 @@
 
         .input-field {
             background-color: transparent;
-           /* border: none;*/
+            padding: 5px;
+            border: none;
             display: flex;
+            align-items: stretch;
             flex-direction: row;
             flex-basis: 100%;
             justify-content: center;
+        }
+        .input-field:focus{
+           outline: none;
         }
 
         .search-icon-container {
@@ -112,6 +117,9 @@
             height: 20px;
             width: 20px;
         }
+        .voice-icon-container{
+            display: flex;
+        }
 
         .voice-icon {
             padding-top: 12px;
@@ -122,7 +130,6 @@
             color: #9aa0a6;
             height: 20px;
             width: 20px;
-            position: absolute;
             right: 0px;
         }
     </style>
@@ -164,8 +171,9 @@
                         </div>
                     </div>
                     <div class=" input-field">
-                        <input class="input-focus" type="text" name="q">
+                        <input class=" input-field" type="text" name="q">
                     </div>
+                    <div class="voice-icon-container">
                     <div class="voice-icon">
                         <span>
                             <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -181,6 +189,7 @@
                                     fill="#ea4335"></path>
                             </svg>
                         </span>
+                    </div>
                     </div>
                     <!--  <input type="submit" value="Google Search">-->
                 </div>
