@@ -1,0 +1,42 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+#page-standr {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#top_bar_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.links-container{
+display: flex;
+}
+.links {
+    justify-items: flex-end;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 6px;
+    color: black;
+    width: 50px;
+}
+.links:hover {
+    text-decoration: underline;
+}
+#title-style{
+    margin: 30px 10px;
+}
+#title-style label{
+    color: #d93025;
+    font-size: 20px;
+    margin: 50px 30px;
+}
+#divider{
+   border-bottom: 1px solid #ebebeb;
+}
