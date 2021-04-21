@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
+    <link href="advanced_styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id=page-stander>
+        <!--ttop bar container start-->
+        <div id="top_bar_container">
+            <div class="head-logo">
+                <a href="index.html">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+                        alt="Google logo" title="go to Google Home" />
+                </a>
+            </div>
+            <div class="links-container">
+                <div>
+                    <a class="links" href="index.html">Google Search</a>
+                </div>
+                <div>
+                    <a class="links" href="images.html">Imager Search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top bar container end-->
+    <!--title area start-->
+    <div id="title-style">
+        <label>Advanced Search</label>
+    </div>
+    </div>
+    <!--divider start-->
+    <div id="divider"></div>
+    <!--divider end-->
+    <!--search form container start-->
+    <div class="advanced-search-container">
+        <form action="https://www.google.com/search" method="get">
+            <label>Find pages with...</label>
+            <div class="whitespace"></div>
+            <label>To do this in the search box.</label>
+            <div class="form-group">
+                <label>All these words:</label>
+                <input type="text" name="as_q">
+                <div class="clarification">
+                    Type the important words: <span class="monospace">tri-colour rat terrier</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>This exact word or phrase:</label>
+                <input type="text" name="as_epq">
+                <div class="clarification">
+                    Put exact words in quotes: <span class="monospace">"rat terrier"</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Any of these words: </label>
+                <input type="text" name="as_oq">
+                <div class="clarification">
+                    Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>None of these words:</label>
+                <input type="text" name="as_eq">
+                <div class="clarification">
+                    Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack
+                        Russell"</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label></label>
+                <div class="right-align">
+                    <input type="submit" class="blue-button" value="Google Advanced Search">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--search form end-->
+</body>
+
+</html>
