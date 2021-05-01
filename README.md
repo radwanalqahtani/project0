@@ -1,4 +1,6 @@
-# CS50 Project0 this is the first project "Project0" of CS50’s Web Programming with Python and JavaScript
+# CS50 Project0 
+
+this is the first project "Project0" of CS50’s Web Programming with Python and JavaScript
 
 # Content
 
