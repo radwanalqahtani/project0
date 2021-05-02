@@ -1,10 +1,14 @@
 # CS50 Project0 
 
-this is the first project "Project0" of CS50’s Web Programming with Python and JavaScript
+This is the first project "Project0" of CS50’s Web Programming with Python and JavaScript
 
 # Content
 
-a simple HTML and CSS code for Google search engine, images and advanced search pages..
+A simple HTML and CSS code for Google search engine, images and advanced search pages..
+
+# Video Link
+
+You can see demonstrating video by clicking [here!](https://youtu.be/BbssBXShclk)
 
 # Link
 
